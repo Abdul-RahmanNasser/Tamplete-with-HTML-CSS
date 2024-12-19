@@ -1,0 +1,28 @@
+.offer .mg {
+    margin: 0 5%;
+}
+
+.offer .any-small-section {
+    margin: 20px;
+    left: 10px;
+    right: 10px;
+    text-align: justify;
+}
+
+.offer i {
+    position: relative;
+    bottom: 5px;
+    float: left;
+    height: 100%;
+    width: 20%;
+    left: 25px;
+    display: inline-block;
+}
+
+.desc {
+    float: left;
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    padding-right: 20px;
+}

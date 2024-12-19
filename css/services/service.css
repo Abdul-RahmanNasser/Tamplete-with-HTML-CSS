@@ -1,0 +1,26 @@
+.service.any-big-section {
+    height: 33.3vh;
+    background-image: url(../images/background/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.service .container {
+    top: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    height: 100%;
+}
+
+.service-item {
+    position: relative;
+    left: 50px;
+    right: 50px;
+    background-color: burlywood;
+    display: inline-block;
+    margin: 0 10px;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+}

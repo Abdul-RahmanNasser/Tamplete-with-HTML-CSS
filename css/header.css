@@ -1,0 +1,82 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header img {
+    margin: 10px 50px;
+    width: 8%;
+}
+
+.header-list {
+    list-style: none;
+    float: right;
+    padding: 20px 80px;
+}
+
+.header-list li {
+    display: inline-block;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.header-list li a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 7px;
+}
+
+.opacity-hover {
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+}
+
+.opacity-hover:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.header-list > li > a::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 5px;
+    height: 3px;
+    width: 0;
+    background-color: #6195FF;
+    transition: width 0.3s;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+}
+
+.header-list > li > a:hover::after {
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 90px;
+    top: 100px;
+    padding-right: 120px;
+    background-color: #6195FF;
+    visibility: hidden;
+    opacity: 0;
+    transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+    -webkit-transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+    -moz-transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+    -ms-transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+    -o-transition: top 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.blog:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 60px;
+}
